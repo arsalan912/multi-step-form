@@ -1,0 +1,95 @@
+.main-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: rgb(172, 173, 177);
+}
+.main-content h1 {
+  color: var(--marine-blue);
+  margin-bottom: 0.7rem;
+}
+.mobile--main__background {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 30rem;
+  border-radius: 1rem;
+  z-index: -1;
+  display: none;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
+.slide {
+  display: none;
+  padding: 2rem 2rem;
+}
+.slide__title {
+  padding: 2rem 2rem 0 2rem;
+  margin-bottom: 1rem;
+}
+.slide-active {
+  display: block;
+}
+
+.page-changer {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  bottom: 0rem;
+}
+.btn {
+  padding: 0.6rem 1rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.go-back {
+  border: none;
+  background: none;
+  color: var(--marine-blue);
+  font-weight: bold;
+}
+.go-back:hover {
+  color: var(--purplish-blue);
+}
+.confirm-btn {
+  border: none;
+  background-color: var(--marine-blue);
+  color: #fff;
+}
+.confirm-btn:hover {
+  background-color: var(--side-font-color);
+}
+
+@media screen and (max-width: 500px) {
+  .main-content {
+    position: static;
+    overflow: scroll;
+  }
+  .main-content::-webkit-scrollbar {
+    display: none;
+  }
+  .slide {
+    padding: 2rem 1rem;
+  }
+  .slide__title {
+    padding: 1.5rem 1rem 0 1rem;
+    margin-bottom: 0rem;
+  }
+  .mobile--main__background {
+    display: block;
+    top: 5rem;
+  }
+  .page-changer {
+    background-color: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  }
+  .btn {
+    margin: 0.9rem 1rem;
+  }
+}

@@ -1,0 +1,27 @@
+.slide--thanks {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.slide--thanks div {
+  display: flex;
+  line-height: 1.3rem;
+  flex-direction: column;
+  gap: 0.9rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+.thank {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .slide--thanks {
+    justify-content: flex-start;
+    transform: translateY(-5rem);
+  }
+}

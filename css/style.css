@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Ubuntu-Medium";
+  src: url("/assets/fonts/Ubuntu-Medium.ttf");
+}
+
+:root {
+  --marine-blue: hsl(213, 96%, 18%);
+  --purplish-blue: hsl(243, 100%, 62%);
+  --color-primary: hsl(228, 100%, 84%);
+  --color-background: rgb(238, 245, 255);
+  --light-blue: hsl(206, 94%, 87%);
+  --side-font-color: rgb(140, 138, 252);
+  --color-warning: hsl(354, 84%, 57%);
+}
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Ubuntu-Medium", sans-serif;
+}
+p {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 0.9rem;
+}
+.form-layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-background);
+  overflow: hidden;
+}
+.form-container {
+  display: grid;
+  grid-template-columns: 1.1fr 2fr;
+  column-gap: 3vw;
+  width: 50rem;
+  height: 40rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  z-index: 999;
+}
+.form-container__item {
+  width: 100%;
+  height: 100%;
+}
+.mobile-background {
+  display: none;
+  position: absolute;
+  background: url("/assets/images/bg-sidebar-mobile.svg");
+  background-size: cover;
+  width: 100vw;
+  height: 40%;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 620px) {
+  h3 {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* .form-layer {
+    overflow: hidden;
+  } */
+  .mobile-background {
+    display: block;
+  }
+  .form-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    background: none;
+    row-gap: 1rem;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 14px;
+  }
+}

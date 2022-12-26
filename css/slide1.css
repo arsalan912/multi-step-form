@@ -1,0 +1,42 @@
+.slide-1__form label {
+  position: relative;
+  color: var(--marine-blue);
+  font-size: 0.9rem;
+}
+.slide-1__form input {
+  outline: none;
+  border: 2px solid rgb(210, 211, 215);
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+.slide-1__form input:focus {
+  border: 2px solid rgb(151, 146, 207);
+}
+
+.error input:focus,
+.error input {
+  border: 2px solid var(--color-warning);
+}
+.slide-1__form input::placeholder {
+  color: rgb(172, 173, 177);
+}
+.error-message {
+  position: absolute;
+  font-size: 12px;
+  opacity: 0;
+  font-weight: 400;
+  color: var(--color-warning);
+  left: 0;
+  /* background-color: #fff; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.168); */
+  padding: 0.3rem;
+  top: 3.4rem;
+  width: 20rem;
+}
+.error .error-message {
+  opacity: 1;
+}

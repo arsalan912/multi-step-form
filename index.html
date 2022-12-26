@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/side.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/slide1.css" />
+    <link rel="stylesheet" href="/css/slide2.css" />
+    <link rel="stylesheet" href="/css/slide3.css" />
+    <link rel="stylesheet" href="/css/slide4.css" />
+    <link rel="stylesheet" href="/css/thanks.css" />
+    <script src="/js/side.js" defer></script>
+    <script src="/js/input.js" defer></script>
+    <script src="/js/add.js" defer></script>
+    <script src="/js/checkbox.js" defer></script>
+    <script src="/js/slide.js" defer></script>
+
+    <title>Multi-step form</title>
+  </head>
+  <body>
+    <div class="mobile-background"></div>
+    <div class="form-layer">
+      <div class="form-container">
+        <!-- Sidebar start -->
+        <div class="form-container__item side">
+          <ul>
+            <li class="slide-num-active">
+              <div class="slide-num">1</div>
+              <div class="mobile-hidden">
+                <p>STEP 1</p>
+                <h3>YOUR INFO</h3>
+              </div>
+            </li>
+            <li>
+              <div class="slide-num">2</div>
+              <div class="mobile-hidden">
+                <p>STEP 2</p>
+                <h3>SELECT PLAN</h3>
+              </div>
+            </li>
+            <li>
+              <div class="slide-num">3</div>
+              <div class="mobile-hidden">
+                <p>STEP 3</p>
+                <h3>ADD-ONS</h3>
+              </div>
+            </li>
+            <li>
+              <div class="slide-num">4</div>
+              <div class="mobile-hidden">
+                <p>STEP 4</p>
+                <h3>SUMMARY</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Sidebar end -->
+        <div class="form-container__item main-content">
+          <div class="mobile--main__background"></div>
+          <!-- stick title -->
+          <div class="slide__title">
+            <h1>Pick add-ons</h1>
+            <p>add-ons enhance your gaming experience</p>
+          </div>
+          <!-- Step 1 start -->
+          <div class="slide slide--info">
+            <form class="slide-1__form">
+              <div class="" id="name-container">
+                <label for="name"
+                  >Name
+                  <div id="name-error" class="error-message"></div>
+                </label>
+                <input id="name" type="text" placeholder="e.g Stephen King" />
+              </div>
+              <div class="" id="email-container">
+                <label for="email"
+                  >Email
+                  <div id="email-error" class="error-message"></div>
+                </label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="e.g.stephenking@lorem.com"
+                />
+              </div>
+              <div class="" id="phone-container">
+                <label for="phone"
+                  >Phone Number
+                  <div id="phone-error" class="error-message"></div>
+                </label>
+                <input id="phone" type="text" placeholder="0 912 " />
+              </div>
+            </form>
+          </div>
+          <!-- Step 1 end -->
+          <!-- Step 2 start -->
+          <div class="slide slide--plan">
+            <div class="plan__select option--year">
+              <!-- <div class="slide--plan__option option--active">
+                <div class="option__item option__icon">
+                  <img src="/assets/images/icon-arcade.svg" alt="" />
+                </div>
+                <div class="option__item option__title">
+                  <h3>Arcade</h3>
+                  <p>$9/mo</p>
+                  <p>2 month for free</p>
+                </div>
+              </div>
+              <div class="slide--plan__option">
+                <div class="option__item option__icon">
+                  <img src="/assets/images/icon-advanced.svg" alt="" />
+                </div>
+                <div class="option__item option__title">
+                  <h3>Advance</h3>
+                  <p>$12/mo</p>
+                  <p>2 month for free</p>
+                </div>
+              </div>
+              <div class="slide--plan__option">
+                <div class="option__item option__icon">
+                  <img src="/assets/images/icon-pro.svg" alt="" />
+                </div>
+                <div class="option__item option__title">
+                  <h3>Pro</h3>
+                  <p>$15/mo</p>
+                  <p>2 month for free</p>
+                </div>
+              </div> -->
+            </div>
+            <div class="plan__switch--container">
+              <span>Monthly</span>
+              <div class="switch">
+                <div class="dot"></div>
+              </div>
+              <span>Yearly</span>
+            </div>
+            <div class="plan-error-message">Plan not selected !</div>
+          </div>
+          <!-- Step 2 end -->
+          <!-- Step 3 start -->
+          <div class="slide slide--add">
+            <div class="checkbox-container">
+              <!-- <div class="chekbox-add">
+                <label class="container">
+                  <input type="checkbox" />
+                </label>
+                <div class="checkbox-title">
+                  <div>
+                    <h3>Online Experienses</h3>
+                    <p>Access to multiplayer games</p>
+                  </div>
+                  <span>+$1/mo</span>
+                </div>
+              </div> -->
+              <!-- <div class="chekbox-add">
+                <label class="container">
+                  <input type="checkbox" />
+                </label>
+                <div class="checkbox-title">
+                  <h3>Online Experienses</h3>
+                  <p>Access to multiplayer games</p>
+                </div>
+              </div> -->
+              <!-- <div class="chekbox-add">
+                <label class="container">
+                  <input type="checkbox" />
+                </label>
+                <div class="checkbox-title">
+                  <h3>Online Experienses</h3>
+                  <p>Access to multiplayer games</p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <!-- Step 3 end -->
+          <!-- Step 4 start -->
+          <div class="slide slide--summary">
+            <div class="summary--container">
+              <div class="summary--plan">
+                <div class="summary--plan__title">
+                  <h3>Arcane (monthly)</h3>
+                  <span id="change">change</span>
+                </div>
+                <div class="summary--plan__price">
+                  <span>$9/mo</span>
+                </div>
+              </div>
+              <ul id="add-on-list">
+                <!-- <li>
+                  <h3>Online service</h3>
+                  <h3>+1/mo</h3>
+                </li>
+                <li>
+                  <h3>Large storage</h3>
+                  <h3>+2/mo</h3>
+                </li> -->
+              </ul>
+            </div>
+            <div class="total">
+              <h3 class="total-per">Total</h3>
+              <h3 class="totalPrice">$12/mo</h3>
+            </div>
+          </div>
+          <!-- Step 4 end -->
+          <!-- Step 5 start -->
+          <div class="slide slide--thanks">
+            <div>
+              <img src="/assets/images/icon-thank-you.svg" alt="" />
+              <h1>Thank you!</h1>
+              <p>
+                Thanks for confirming your subcription! we hope you have fun
+                using our platform. if you ever need support please feel free to
+                email us at support@loremgaming.com
+              </p>
+            </div>
+          </div>
+          <!-- Step 5 end -->
+          <div class="page-changer">
+            <button class="btn go-back">Go back</button>
+            <button class="btn confirm-btn">Next step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

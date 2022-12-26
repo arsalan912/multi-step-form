@@ -1,0 +1,67 @@
+.side {
+  background: url("/assets/images/bg-sidebar-desktop.svg");
+  background-size: cover;
+  border-radius: 0.7rem;
+  background-position: -20px;
+  color: var(--side-font-color);
+}
+.side ul {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 1.5rem;
+}
+.side ul li {
+  display: flex;
+  column-gap: 0.8rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.side ul li p {
+  margin-bottom: 0.2rem;
+}
+.side ul li h3 {
+  color: var(--color-background);
+  font-weight: 500;
+  letter-spacing: 0.09rem;
+}
+.slide-num {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 100%;
+  border: 2px solid var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary);
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+.slide-num-active .slide-num {
+  border: none;
+  color: var(--marine-blue);
+  background-color: var(--light-blue);
+}
+
+@media screen and (max-width: 500px) {
+  .side {
+    margin-top: 0.7rem;
+    background: none;
+    height: 4rem;
+  }
+  .side ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    padding: 0;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+  .side ul li {
+    margin-bottom: 0;
+  }
+}
